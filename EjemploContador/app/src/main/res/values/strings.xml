@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EjemploContador</string>
+    <string name="mi_texto">"Hola a to@s</string>
+    <string name="textView_contador">Numero en el contador:</string>
+    <string name="tv_cont_inicio">0</string>
+    <string name="btn_reset">RESET</string>
+    <string name="plus">Incrementa</string>
+    <string name="minus">Decrementa</string>
+    string>
+</resources>

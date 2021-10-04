@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CalculadoraOperandos</string>
+    <string name="calcular">Calcular</string>
+    <string name="borrar">Borrar</string>
+    <string name="operando1">Primer operando</string>
+    <string name="operar">Operador</string>
+    <string name="operando2">Segundo operando</string>
+</resources>

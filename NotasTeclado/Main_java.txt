@@ -1,0 +1,78 @@
+package com.example.notasteclado;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.GridView;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.Locale;
+
+public class MainActivity extends AppCompatActivity {
+    public String texto="";
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        visualizar();
+
+    }
+    public void escribir(View v1){
+        switch (v1.getId()){
+            case R.id.buttona:
+                addLetra("a");
+                break;
+            case R.id.buttonb:
+                addLetra("b");
+                break;
+            case R.id.buttonc:
+                addLetra("c");
+                break;
+            case R.id.buttond:
+                addLetra("d");
+                break;
+            case R.id.buttone:
+                addLetra("e");
+                break;
+            case R.id.buttonf:
+                addLetra("f");
+                break;
+            case R.id.buttong:
+                addLetra("g");
+                break;
+            case R.id.buttonh:
+                addLetra("h");
+                break;
+            case R.id.buttoni:
+                addLetra("i");
+                break;
+            case R.id.buttonj:
+                addLetra("j");
+                break;
+            case R.id.buttonk:
+                addLetra("k");
+                break;
+            case R.id.buttonl:
+                addLetra("l");
+                break;
+
+        }
+        visualizar();
+    }
+    public void visualizar(){
+        TextView tvEscribir = findViewById(R.id.tvEscritura);
+        tvEscribir.setText(texto);
+    }
+    public void concatenar(String letra){
+        texto=texto+letra;
+    }
+    public void addLetra(String letra){
+        if (texto.length()==0){
+            concatenar(letra.toUpperCase(Locale.ROOT));
+        }else{
+            concatenar(letra);
+        }
+    }
