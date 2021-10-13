@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CalculadoraOperandos</string>
+    <string name="calcular">Calcular</string>
+    <string name="borrar">Borrar</string>
+    <string name="operando1">Primer operando</string>
+    <string name="operar">Operador</string>
+    <string name="operando2">Segundo operando</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="por">x</string>
+    <string name="entre">/</string>
+    <string name="resultado">Resultado</string>
+    <string name="primer_n_mero">Primer número</string>
+    <string name="segundo_numero">Segundo número</string>
+</resources>

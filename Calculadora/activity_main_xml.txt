@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/operando2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.91">
+
+        <Button
+            android:id="@+id/btnCalcular"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:onClick="calcular"
+            android:text="@string/calcular" />
+
+        <Button
+            android:id="@+id/btnBorrar"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:onClick="borrarDatos"
+            android:text="@string/borrar" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/operador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/operar"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.363" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:checkedButton="@id/rbtnSuma"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.324">
+
+        <RadioButton
+            android:id="@+id/rbtnSuma"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:minHeight="48dp"
+            android:onClick="comprobarOperador"
+            android:text="@string/plus"
+            android:textAlignment="center"
+            android:textColor="#78909C"
+            android:textColorHighlight="@color/teal_200"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rbtnResta"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:onClick="comprobarOperador"
+            android:text="@string/minus"
+            android:textAlignment="center"
+            android:textColorHighlight="@color/teal_200"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rbtnMultiplicacion"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:onClick="comprobarOperador"
+            android:text="@string/por"
+            android:textAlignment="center"
+            android:textColorHighlight="@color/teal_200"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rbtnDivision"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:onClick="comprobarOperador"
+            android:text="@string/entre"
+            android:textAlignment="center"
+            android:textColorHighlight="@color/teal_200"
+            android:textSize="24sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resultado"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.806" />
+
+    <EditText
+        android:id="@+id/tvOper1"
+        android:layout_width="176dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="@string/primer_n_mero"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <TextView
+        android:id="@+id/operando1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/operando1"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.113" />
+
+    <EditText
+        android:id="@+id/tvOper2"
+        android:layout_width="176dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="@string/segundo_numero"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.678" />
+
+    <TextView
+        android:id="@+id/operando2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/operando2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="200dp"
+
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.803" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
