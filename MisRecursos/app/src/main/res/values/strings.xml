@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MisRecursos</string>
+    <string name="app_recursos">Aplicación Recursos</string>
+    <string name="uno">UNO</string>
+    <string name="dos">DOS</string>
+    <string name="tres">TRES</string>
+    <string name="cuatro">CUATRO</string>
+</resources>

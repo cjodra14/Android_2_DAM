@@ -6,5 +6,6 @@
     <string name="btn_reset">RESET</string>
     <string name="plus">Incrementa</string>
     <string name="minus">Decrementa</string>
+    <string name="conteo_negativo">Conteo Negativo</string>
     string>
 </resources>

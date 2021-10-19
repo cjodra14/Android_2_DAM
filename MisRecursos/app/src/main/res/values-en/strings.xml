@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyResources</string>
+    <string name="app_recursos">Resources Application</string>
+    <string name="uno">ONE</string>
+    <string name="dos">TWO</string>
+    <string name="tres">THREE</string>
+    <string name="cuatro">FOUR</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nire Baliabideak</string>
+    <string name="app_recursos">Baliabideen Aplikazioa</string>
+    <string name="uno">BAT</string>
+    <string name="dos">BI</string>
+    <string name="tres">HIRU</string>
+    <string name="cuatro">LAU</string>
+</resources>
