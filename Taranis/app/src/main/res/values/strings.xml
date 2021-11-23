@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Taranis</string>
+    <string name="bg_description">Fondo de pantalla</string>
+    <string name="city_not_found">No se ha encontrado ciudad</string>
+    <string name="intro_city">Por favor introduce el nombre de una ciudad</string>
+    <string name="intro_city_valid">Introduce un nombre de ciudad valido</string>
+</resources>
